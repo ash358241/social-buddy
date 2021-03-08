@@ -14,7 +14,7 @@ const Home = () => {
             <h1>this is home</h1>
             <h3>I have got {posts.length} posts!</h3>
             {
-                posts.map(post => <Post post={post}></Post>)
+                posts.map(post => <Post key={post.id} post={post}></Post>)
             }
         </div>
     );

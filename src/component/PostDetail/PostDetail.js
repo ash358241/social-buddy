@@ -25,7 +25,7 @@ const PostDetail = () => {
             <p>user id: {post.id}</p>
             <h4>total comments: {comments.length}</h4>
             {
-                comments.map(comment => <Comments comment={comment}></Comments>)
+                comments.map(comment => <Comments key={comment.id} comment={comment}></Comments>)
             }
         </div>
     );
